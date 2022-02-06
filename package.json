@@ -1,6 +1,5 @@
 {
     "name": "torque-landing-page",
-    "version": "1.0.0",
     "scripts": {
         "watch": "npx tailwindcss -i ./css/styles.css -o ./dist/output.css --watch",
         "build": "npx tailwindcss -i ./css/styles.css -o ./dist/output.css --minify"
