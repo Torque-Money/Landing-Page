@@ -31,9 +31,7 @@ import Footer from "../components/Footer/index.astro";
                     <span class="text-neutral-300">leverage up to a maximum of roughly 82x</span>.
                 </p>
             </Fragment>
-            <a slot="cta" class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://app.torque.money/"
-                >Leverage Now</a
-            >
+            <a slot="cta" class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://app.torque.money/">Leverage Now</a>
             <img slot="image" class="glow rounded-xl" src="/assets/GRAPH.png" width="600" />
         </ArticleLeft>
         <ArticleRight>
@@ -47,12 +45,24 @@ import Footer from "../components/Footer/index.astro";
                     <span class="text-neutral-300">competitive APY</span>, while enjoying bonus yield farming rewards.
                 </p>
             </Fragment>
-            <a slot="cta" class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://app.torque.money/"
-                >Add Liquidity</a
-            >
+            <a slot="cta" class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://app.torque.money/">Add Liquidity</a>
             <img slot="image" src="/assets/TOKEN.png" width="400" style="filter: drop-shadow(-4px 8px 12px #842191)" />
         </ArticleRight>
-        <ArticleLeft></ArticleLeft>
+        <ArticleLeft>
+            <Fragment slot="heading">Trustless. <span class="text-fuchsia-500">Permissionless</span>. Decentralized.</Fragment>
+            <Fragment slot="text">
+                <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12">
+                    100% of our services are managed entirely by smart contracts on the blockchain which can be audited by anyone, creating a completely
+                    <span class="text-neutral-300">trustless</span> and <span class="text-neutral-300">decentralized</span> platform.
+                </p>
+                <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12">
+                    Our services are also 100% equal for every single user, allowing us to present a truly
+                    <span class="text-neutral-300">permissionless</span> system.
+                </p>
+            </Fragment>
+            <a slot="cta" class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://docs.torque.money/">Read The Docs</a>
+            <img slot="image" src="/assets/LOCK.svg" width="400" style="filter: drop-shadow(4px 8px 12px rgba(132, 33, 145, 0.5))" />
+        </ArticleLeft>
     </ContentWrapper>
     <Footer />
 </Layout>
