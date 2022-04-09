@@ -1,4 +1,7 @@
 ---
+import OG from "./OG.astro";
+import Twitter from "./Twitter.astro";
+
 const TITLE = "Torque Money - DeFi The Norm"
 const DESCRIPTION = "Home of high leverage and the highest sustainable yield farming rewards, powered 100% by DeFi."
 const THEME_COLOR = "#921ebb";
@@ -33,3 +36,7 @@ const TWITTER_HANDLE = "@torque_money"
 <meta name="theme-color" content={THEME_COLOR} />
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<OG title={TITLE} description={DESCRIPTION} siteURL={SITE_URL} bannerURL={BANNER_URL} />
+
+<Twitter title={TITLE} description={DESCRIPTION} siteURL={SITE_URL} bannerURL={BANNER_URL} twitterHandle={TWITTER_HANDLE} />
