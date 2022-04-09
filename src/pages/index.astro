@@ -5,7 +5,11 @@ import "../styles/body.css";
 import Layout from "../layouts/Layout.astro";
 
 import Header from "../components/Header/index.astro";
-import ContentWrapper from "../components/Article/ContentWrapper/index.astro";
+
+import ContentWrapper from "../components/ContentWrapper/index.astro";
+import ArticleLeft from "../components/Article/ArticleLeft/index.astro";
+import ArticleRight from "../components/Article/ArticleRight/index.astro";
+
 import Footer from "../components/Footer/index.astro";
 ---
 
@@ -16,6 +20,39 @@ import Footer from "../components/Footer/index.astro";
 <Layout>
     <Header />
     <ContentWrapper>
+        <ArticleLeft>
+            <Fragment slot="heading">Leverage To The <span class="text-fuchsia-500">Extreme</span></Fragment>
+            <Fragment slot="text">
+                <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12">
+                    Crypto is all about freedom, so why should you be restricted when margin trading?
+                </p>
+                <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12">
+                    While we advise against taking such risky positions, our protocol will let you
+                    <span class="text-neutral-300">leverage up to a maximum of roughly 82x</span>.
+                </p>
+            </Fragment>
+            <a slot="cta" class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://app.torque.money/"
+                >Leverage Now</a
+            >
+            <img slot="image" class="glow rounded-xl" src="/assets/GRAPH.png" width="600" />
+        </ArticleLeft>
+        <ArticleRight>
+            <Fragment slot="heading">High <span class="text-fuchsia-500">APY</span> and Yields</Fragment>
+            <Fragment slot="text">
+                <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12 ml-auto">
+                    Looking for <span class="text-neutral-300">high returns</span> without taking on the risks of leveraged trading?
+                </p>
+                <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12 ml-auto">
+                    <span class="text-neutral-300">Provide liquidity</span> to our leveraging pool and you'll be rewarded with a
+                    <span class="text-neutral-300">competitive APY</span>, while enjoying bonus yield farming rewards.
+                </p>
+            </Fragment>
+            <a slot="cta" class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://app.torque.money/"
+                >Add Liquidity</a
+            >
+            <img slot="image" src="/assets/TOKEN.png" width="400" style="filter: drop-shadow(-4px 8px 12px #842191)" />
+        </ArticleRight>
+        <ArticleLeft></ArticleLeft>
     </ContentWrapper>
     <Footer />
 </Layout>
