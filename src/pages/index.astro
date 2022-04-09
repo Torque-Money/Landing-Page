@@ -14,7 +14,8 @@ import Footer from "../components/Footer/index.astro";
 
 import Image from "../components/Image/index.astro";
 import Link from "../components/Link/index.astro";
-import Paragraph from "../components/Text/Paragraph/index.astro";
+import ParagraphLeft from "../components/Text/Paragraph/ParagraphLeft/index.astro";
+import ParagraphRight from "../components/Text/Paragraph/ParagraphRight/index.astro";
 import Emphasise from "../components/Text/Emphasise/index.astro";
 ---
 
@@ -28,11 +29,11 @@ import Emphasise from "../components/Text/Emphasise/index.astro";
         <ArticleLeft>
             <Fragment slot="heading">Leverage To The <span class="text-fuchsia-500">Extreme</span></Fragment>
             <Fragment slot="text">
-                <Paragraph>Crypto is all about freedom, so why should you be restricted when margin trading?</Paragraph>
-                <Paragraph>
+                <ParagraphLeft>Crypto is all about freedom, so why should you be restricted when margin trading?</ParagraphLeft>
+                <ParagraphLeft>
                     While we advise against taking such risky positions, our protocol will let you
                     <Emphasise>leverage up to a maximum of roughly 82x</Emphasise>.
-                </Paragraph>
+                </ParagraphLeft>
             </Fragment>
             <Link slot="cta" href="https://app.torque.money/">Leverage Now</Link>
             <Image slot="image" src="/assets/GRAPH.png" width="600" />
@@ -40,31 +41,31 @@ import Emphasise from "../components/Text/Emphasise/index.astro";
         <ArticleRight>
             <Fragment slot="heading">High <span class="text-fuchsia-500">APY</span> and Yields</Fragment>
             <Fragment slot="text">
-                <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12 ml-auto">
-                    Looking for <span class="text-neutral-300">high returns</span> without taking on the risks of leveraged trading?
-                </p>
-                <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12 ml-auto">
-                    <span class="text-neutral-300">Provide liquidity</span> to our leveraging pool and you'll be rewarded with a
-                    <span class="text-neutral-300">competitive APY</span>, while enjoying bonus yield farming rewards.
-                </p>
+                <ParagraphRight>
+                    Looking for <Emphasise>high returns</Emphasise> without taking on the risks of leveraged trading?
+                </ParagraphRight>
+                <ParagraphRight>
+                    <Emphasise>Provide liquidity</Emphasise> to our leveraging pool and you'll be rewarded with a
+                    <Emphasise>competitive APY</Emphasise>, while enjoying bonus yield farming rewards.
+                </ParagraphRight>
             </Fragment>
-            <a slot="cta" class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://app.torque.money/">Add Liquidity</a>
-            <img slot="image" src="/assets/TOKEN.png" width="400" style="filter: drop-shadow(-4px 8px 12px #842191)" />
+            <Link slot="cta" href="https://app.torque.money/">Add Liquidity</Link>
+            <Image slot="image"src="/assets/TOKEN.png" width="400" />
         </ArticleRight>
         <ArticleLeft>
             <Fragment slot="heading">Trustless. <span class="text-fuchsia-500">Permissionless</span>. Decentralized.</Fragment>
             <Fragment slot="text">
-                <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12">
+                <ParagraphLeft>
                     100% of our services are managed entirely by smart contracts on the blockchain which can be audited by anyone, creating a completely
-                    <span class="text-neutral-300">trustless</span> and <span class="text-neutral-300">decentralized</span> platform.
-                </p>
-                <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12">
+                    <Emphasise>trustless</Emphasise> and <Emphasise>decentralized</Emphasise> platform.
+                </ParagraphLeft>
+                <ParagraphLeft>
                     Our services are also 100% equal for every single user, allowing us to present a truly
-                    <span class="text-neutral-300">permissionless</span> system.
-                </p>
+                    <Emphasise>permissionless</Emphasise> system.
+                </ParagraphLeft>
             </Fragment>
-            <a slot="cta" class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://docs.torque.money/">Read The Docs</a>
-            <img slot="image" src="/assets/LOCK.svg" width="400" style="filter: drop-shadow(4px 8px 12px rgba(132, 33, 145, 0.5))" />
+            <Link slot="cta" href="https://docs.torque.money/">Read The Docs</Link>
+            <Image slot="image" src="/assets/LOCK.svg" width="400" />
         </ArticleLeft>
     </ContentWrapper>
     <Footer />
