@@ -1,19 +1,20 @@
 ---
 import Link from "../../Link/index.astro";
+import NavLink from "./NavLink/index.astro";
+
+import Image from "../../Image/index.astro";
 ---
 
 <nav class="flex items-center justify-between py-4">
     <a>
-        <img src="/assets/LOGO.png" width="175" alt="Torque" />
+        <Image src="/assets/LOGO.png" width="175" />
     </a>
-    <ul class="text-white text-2xl font-medium flex items-center justify-evenly space-x-10">
+    <ul class="flex items-center justify-evenly space-x-10">
         <li>
-            <a href="https://linktr.ee/torque_money">Links</a>
+            <NavLink href="https://linktr.ee/torque_money">Links</NavLink>
         </li>
         <li>
-            <Link href="https://app.torque.money/">
-                App
-            </Link>
+            <Link href="https://app.torque.money/">App</Link>
         </li>
     </ul>
 </nav>
