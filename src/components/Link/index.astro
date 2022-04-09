@@ -6,9 +6,7 @@ const pagePath = Astro.request.url;
 ---
 
 <a class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow-box" href={href} onclick={
-    () => {
-        logEvent("link_click", "external_link_click", pagePath + "_to_" + href);
-    }
+    () => logEvent("link_click", "external_link_click", pagePath + "_to_" + href)
 }>
     <slot />
 </a>
