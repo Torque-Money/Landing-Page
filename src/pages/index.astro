@@ -11,6 +11,11 @@ import ArticleLeft from "../components/Article/ArticleLeft/index.astro";
 import ArticleRight from "../components/Article/ArticleRight/index.astro";
 
 import Footer from "../components/Footer/index.astro";
+
+import Image from "../components/Image/index.astro";
+import Link from "../components/Link/index.astro";
+import Paragraph from "../components/Text/Paragraph/index.astro";
+import Emphasise from "../components/Text/Emphasise/index.astro";
 ---
 
 <!-- **** I want to consider a better way of passing links down the tree -->
@@ -23,16 +28,14 @@ import Footer from "../components/Footer/index.astro";
         <ArticleLeft>
             <Fragment slot="heading">Leverage To The <span class="text-fuchsia-500">Extreme</span></Fragment>
             <Fragment slot="text">
-                <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12">
-                    Crypto is all about freedom, so why should you be restricted when margin trading?
-                </p>
-                <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12">
+                <Paragraph>Crypto is all about freedom, so why should you be restricted when margin trading?</Paragraph>
+                <Paragraph>
                     While we advise against taking such risky positions, our protocol will let you
-                    <span class="text-neutral-300">leverage up to a maximum of roughly 82x</span>.
-                </p>
+                    <Emphasise>leverage up to a maximum of roughly 82x</Emphasise>.
+                </Paragraph>
             </Fragment>
-            <a slot="cta" class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://app.torque.money/">Leverage Now</a>
-            <img slot="image" class="glow rounded-xl" src="/assets/GRAPH.png" width="600" />
+            <Link slot="cta" href="https://app.torque.money/">Leverage Now</Link>
+            <Image slot="image" src="/assets/GRAPH.png" width="600" />
         </ArticleLeft>
         <ArticleRight>
             <Fragment slot="heading">High <span class="text-fuchsia-500">APY</span> and Yields</Fragment>
