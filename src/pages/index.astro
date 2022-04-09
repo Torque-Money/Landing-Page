@@ -1,60 +1,163 @@
 ---
-// Style Imports
-import '../styles/global.css';
-import '../styles/home.css';
-// Component Imports
-import Tour from '../components/Tour.astro';
-// You can import components from any supported Framework here!
-
-
-// Component Script:
-// You can write any JavaScript/TypeScript that you'd like here.
-// It will run during the build, but never in the browser.
-// All variables are available to use in the HTML template below.
-let title = 'My Astro Site';
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+import '../styles/body.css';
+import '../styles/styles.css';
 ---
+
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>{title}</title>
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MKW6VC08TF"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+            gtag("config", "G-MKW6VC08TF");
+        </script>
 
-	<style>
-		header {
-			display: flex;
-			flex-direction: column;
-			gap: 1em;
-			max-width: min(100%, 68ch);
-		}
-	</style>
-</head>
-<body>
-	<main>
-		<header>
-			<div>
-				<img width="60" height="80" src="/assets/logo.svg" alt="Astro logo">
-				<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
-			</div>
-		</header>
+        <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
+        <link rel="manifest" href="public/manifest.json" />
 
-		<Tour />
+        <title>Torque - Extreme DeFi Leveraging</title>
+        <meta
+            name="description"
+            content="The official website of the Torque DeFi leveraging protocol. Borrow extreme amounts of crypto against your collateral, or provide liquidity for high APY's and yield farming bonuses."
+        />
+        <meta name="theme-color" content="#921ebb" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://torque.money" />
 
-		<!--
+        <meta name="og:title" content="Torque - Extreme DeFi Leveraging" />
+        <meta
+            name="og:description"
+            content="The official website of the Torque DeFi leveraging protocol. Borrow extreme amounts of crypto against your collateral, or provide liquidity for high APY's and yield farming bonuses."
+        />
+        <meta name="og:image" content="https://i.imgur.com/IzQ9Jvl.png" />
+        <meta property="og:url" content="https://torque.money" />
 
-		You can also use imported framework components directly in your markup!
-		
-		Note: by default, these components are NOT interactive on the client.
-		The `:visible` directive tells Astro to make it interactive.
-		
-		See https://docs.astro.build/core-concepts/component-hydration/ 
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Torque - Extreme DeFi Leveraging" />
+        <meta
+            name="twitter:description"
+            content="The official website of the Torque DeFi leveraging protocol. Borrow extreme amounts of crypto against your collateral, or provide liquidity for high APY's and yield farming bonuses."
+        />
+        <meta name="twitter:site" content="@torque_money" />
+        <meta name="twitter:image" content="https://i.imgur.com/IzQ9Jvl.png" />
+        <meta property="twitter:url" content="https://torque.money" />
 
-		-->
-
-	</main>
-</body>
+        <link href="css/body.css" rel="stylesheet" />
+        <link href="dist/output.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="w-4/5 mx-auto">
+            <nav class="flex items-center justify-between py-4">
+                <a><img src="images/LOGO.png" width="175" alt="Torque" /></a>
+                <ul class="text-white text-2xl font-medium flex items-center justify-evenly space-x-10">
+                    <li>
+                        <a href="https://linktr.ee/torque_money">Links</a>
+                    </li>
+                    <li>
+                        <a class="bg-fuchsia-700 hover:bg-fuchsia-600 px-6 py-3 rounded-xl font-bold glow" href="https://app.torque.money/">App</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="xl:mt-32 mt-8 flex xl:flex-row flex-col xl:items-start items-center justify-evenly xl:space-y-0 space-y-16 xl:space-x-32 w-11/12 mx-auto">
+                <div class="flex flex-col items-start space-y-8" style="min-width: 300px">
+                    <div class="text-5xl font-bold text-white pt-32">
+                        <h1>Extreme <span class="text-fuchsia-600">DeFi</span></h1>
+                        <h1 class="text-6xl">Leveraging</h1>
+                    </div>
+                    <h2 class="text-xl text-neutral-400 font-medium w-11/12">
+                        Torque provides clients with huge amounts of <span class="text-neutral-300">leverage</span> and
+                        <span class="text-neutral-300">liquidity providing</span> rewards for the most popular cryptocurrencies whilst being
+                        <span class="text-neutral-300">100% decentralized and permissionless.</span>
+                    </h2>
+                    <a class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://app.torque.money/"
+                        >Get Started</a
+                    >
+                </div>
+                <img class="glow rounded-xl" src="images/APP.png" width="800" />
+            </div>
+        </header>
+        <!-- Body -->
+        <div class="bg-neutral-800 bg-opacity-30 border-t-8 border-opacity-60 border-fuchsia-700 mt-24 py-32">
+            <!-- Articles -->
+            <main class="w-4/5 mx-auto flex flex-col items-center space-y-48">
+                <!-- Leverage -->
+                <article class="w-4/5 mx-auto flex xl:flex-row flex-col xl:items-start items-center justify-evenly xl:space-x-32 xl:space-y-0 space-y-24">
+                    <div class="flex flex-col items-start space-y-12 xl:pt-24" style="min-width: 400px">
+                        <div class="pb-6 border-b-2 border-b-neutral-400 border-opacity-5">
+                            <h3 class="text-white font-bold text-3xl">Leverage To The <span class="text-fuchsia-500">Extreme</span></h3>
+                            <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12">
+                                Crypto is all about freedom, so why should you be restricted when margin trading?
+                            </p>
+                            <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12">
+                                While we advise against taking such risky positions, our protocol will let you
+                                <span class="text-neutral-300">leverage up to a maximum of roughly 82x</span>.
+                            </p>
+                        </div>
+                        <a class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://app.torque.money/"
+                            >Leverage Now</a
+                        >
+                    </div>
+                    <img class="glow rounded-xl" src="images/GRAPH.png" width="600" />
+                </article>
+                <!-- Provide -->
+                <article class="w-4/5 mx-auto flex xl:flex-row flex-col xl:items-start items-center justify-evenly xl:space-x-32 xl:space-y-0 space-y-24">
+                    <img src="images/TOKEN.png" width="400" style="filter: drop-shadow(-4px 8px 12px #842191)" />
+                    <div class="flex flex-col items-end space-y-12 xl:pt-24" style="min-width: 400px">
+                        <div class="text-right pb-6 border-b-2 border-b-neutral-400 border-opacity-5">
+                            <h3 class="text-white font-bold text-3xl">High <span class="text-fuchsia-500">APY</span> and Yields</h3>
+                            <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12 ml-auto">
+                                Looking for <span class="text-neutral-300">high returns</span> without taking on the risks of leveraged trading?
+                            </p>
+                            <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12 ml-auto">
+                                <span class="text-neutral-300">Provide liquidity</span> to our leveraging pool and you'll be rewarded with a
+                                <span class="text-neutral-300">competitive APY</span>, while enjoying bonus yield farming rewards.
+                            </p>
+                        </div>
+                        <a class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://app.torque.money/"
+                            >Add Liquidity</a
+                        >
+                    </div>
+                </article>
+                <!-- Trustless -->
+                <article class="w-4/5 mx-auto flex xl:flex-row flex-col xl:items-start items-center justify-evenly xl:space-x-32 xl:space-y-0 space-y-24">
+                    <div class="flex flex-col items-start space-y-12 xl:pt-24" style="min-width: 400px">
+                        <div class="pb-6 border-b-2 border-b-neutral-400 border-opacity-5">
+                            <h3 class="text-white font-bold text-3xl">Trustless. <span class="text-fuchsia-500">Permissionless</span>. Decentralized.</h3>
+                            <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12">
+                                100% of our services are managed entirely by smart contracts on the blockchain which can be audited by anyone, creating a completely
+                                <span class="text-neutral-300">trustless</span> and <span class="text-neutral-300">decentralized</span> platform.
+                            </p>
+                            <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12">
+                                Our services are also 100% equal for every single user, allowing us to present a truly
+                                <span class="text-neutral-300">permissionless</span> system.
+                            </p>
+                        </div>
+                        <a class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://docs.torque.money/"
+                            >Read The Docs</a
+                        >
+                    </div>
+                    <img src="images/LOCK.svg" width="400" style="filter: drop-shadow(4px 8px 12px rgba(132, 33, 145, 0.5))" />
+                </article>
+            </main>
+        </div>
+        <!-- Footer -->
+        <footer class="w-4/5 mx-auto">
+            <ul class="text-neutral-400 text-lg font-medium flex items-center justify-start space-x-10 pb-6 pt-10">
+                <li>
+                    <a href="https://linktr.ee/torque_money">Links</a>
+                </li>
+                <li>
+                    <a href="https://app.torque.money/">App</a>
+                </li>
+            </ul>
+        </footer>
+    </body>
 </html>
