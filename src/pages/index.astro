@@ -17,6 +17,7 @@ import Link from "../components/Link/index.astro";
 import ParagraphLeft from "../components/Text/Paragraph/ParagraphLeft/index.astro";
 import ParagraphRight from "../components/Text/Paragraph/ParagraphRight/index.astro";
 import Emphasise from "../components/Text/Emphasise/index.astro";
+import Accent from "../components/Text/Accent/index.astro";
 ---
 
 <!-- **** I want to consider a better way of passing links down the tree -->
@@ -27,7 +28,7 @@ import Emphasise from "../components/Text/Emphasise/index.astro";
     <Header />
     <ContentWrapper>
         <ArticleLeft>
-            <Fragment slot="heading">Leverage To The <span class="text-fuchsia-500">Extreme</span></Fragment>
+            <Fragment slot="heading">Leverage To The <Accent>Extreme</Accent></Fragment>
             <Fragment slot="text">
                 <ParagraphLeft>Crypto is all about freedom, so why should you be restricted when margin trading?</ParagraphLeft>
                 <ParagraphLeft>
@@ -39,7 +40,7 @@ import Emphasise from "../components/Text/Emphasise/index.astro";
             <Image slot="image" src="/assets/GRAPH.png" width="600" />
         </ArticleLeft>
         <ArticleRight>
-            <Fragment slot="heading">High <span class="text-fuchsia-500">APY</span> and Yields</Fragment>
+            <Fragment slot="heading">High <Accent>APY</Accent> and Yields</Fragment>
             <Fragment slot="text">
                 <ParagraphRight>
                     Looking for <Emphasise>high returns</Emphasise> without taking on the risks of leveraged trading?
@@ -53,7 +54,7 @@ import Emphasise from "../components/Text/Emphasise/index.astro";
             <Image slot="image"src="/assets/TOKEN.png" width="400" />
         </ArticleRight>
         <ArticleLeft>
-            <Fragment slot="heading">Trustless. <span class="text-fuchsia-500">Permissionless</span>. Decentralized.</Fragment>
+            <Fragment slot="heading">Trustless. <Accent>Permissionless</Accent>. Decentralized.</Fragment>
             <Fragment slot="text">
                 <ParagraphLeft>
                     100% of our services are managed entirely by smart contracts on the blockchain which can be audited by anyone, creating a completely
