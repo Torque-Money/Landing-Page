@@ -1,13 +1,10 @@
 ---
-const {} = Astro.props;
+const {title, description, siteURL, bannerURL, twitterHandle} = Astro.props;
 ---
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Torque - Extreme DeFi Leveraging" />
-<meta
-    name="twitter:description"
-    content="The official website of the Torque DeFi leveraging protocol. Borrow extreme amounts of crypto against your collateral, or provide liquidity for high APY's and yield farming bonuses."
-/>
-<meta name="twitter:site" content="@torque_money" />
-<meta name="twitter:image" content="https://i.imgur.com/IzQ9Jvl.png" />
-<meta property="twitter:url" content="https://torque.money" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta property="twitter:url" content={siteURL} />
+<meta name="twitter:image" content={bannerURL} />
+<meta name="twitter:site" content={twitterHandle} />
