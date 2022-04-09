@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Header() {
+const Header = () => {
     return (
         <header class="w-4/5 mx-auto">
             <nav class="flex items-center justify-between py-4">
@@ -39,4 +39,6 @@ export default function Header() {
             </div>
         </header>
     );
-}
+};
+
+export default Header;
