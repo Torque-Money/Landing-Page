@@ -1,8 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
-import ArticleLeft from "../components/Article/ArticleLeft/index.astro";
-import ArticleRight from "../components/Article/ArticleRight/index.astro";
+import Article from "../components/Article/index.tsx";
 
 import Image from "../components/Image/index.astro";
 import Link from "../components/Link/index.astro";
@@ -12,7 +11,7 @@ import Accent from "../components/Text/Accent/index.astro";
 ---
 
 <Layout>
-    <ArticleLeft>
+    <Article side="left">
         <Fragment slot="heading">Leverage To The <Accent>Extreme</Accent></Fragment>
         <Fragment slot="text">
             <Paragraph side="left">Crypto is all about <Emphasise>freedom</Emphasise>, so why should you be restricted when <Emphasise>margin trading</Emphasise>?</Paragraph>
@@ -20,8 +19,8 @@ import Accent from "../components/Text/Accent/index.astro";
         </Fragment>
         <Link slot="cta" href="https://app.torque.money/">Leverage Now</Link>
         <Image slot="image" src="/assets/GRAPH.png" width="600" alt="Leverage graph" />
-    </ArticleLeft>
-    <ArticleRight>
+    </Article>
+    <Article side="right">
         <Fragment slot="heading">On-chain <Accent>Optimized</Accent> LP Rewards</Fragment>
         <Fragment slot="text">
             <Paragraph side="right">
@@ -36,8 +35,8 @@ import Accent from "../components/Text/Accent/index.astro";
         </Fragment>
         <Link slot="cta" href="https://app.torque.money/">Deposit Now</Link>
         <Image slot="image"src="/assets/TOKEN.png" width="400" alt="TAU token" />
-    </ArticleRight>
-    <ArticleLeft>
+    </Article>
+    <Article side="left">
         <Fragment slot="heading">Trustless. <Accent>Permissionless</Accent>. Decentralized.</Fragment>
         <Fragment slot="text">
             <Paragraph side="left">
@@ -51,5 +50,5 @@ import Accent from "../components/Text/Accent/index.astro";
         </Fragment>
         <Link slot="cta" href="https://docs.torque.money/">Read The Docs</Link>
         <Image slot="image" src="/assets/LOCK.svg" width="400" alt="Lock" />
-    </ArticleLeft>
+    </Article>
 </Layout>
