@@ -3,7 +3,7 @@ import HeaderWrapper from "./HeaderWrapper/index.astro";
 
 import Image from "../Image/index.astro";
 import Link from "../Link/index.astro";
-import ParagraphLeft from "../Text/Paragraph/ParagraphLeft/index.astro";
+import Paragraph from "../Text/Paragraph/index.tsx";
 import Emphasise from "../Text/Emphasise/index.astro";
 import Accent from "../Text/Accent/index.astro";
 ---
@@ -15,11 +15,11 @@ import Accent from "../Text/Accent/index.astro";
                 <h1>DeFi The</h1>
                 <h1 class="text-6xl"><Accent>Future</Accent></h1>
             </div>
-            <ParagraphLeft>
+            <Paragraph side="left">
                 Torque provides the highest <Emphasise>leverage</Emphasise> and
                 <Emphasise>onchain-optimized LP</Emphasise> rewards possible in
                 <Emphasise>DeFi</Emphasise>. 100% decentralized and permissionless.
-            </ParagraphLeft>
+            </Paragraph>
             <Link href="https://app.torque.money/">
                 Get Started
             </Link>
