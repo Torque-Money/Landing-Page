@@ -18,48 +18,44 @@ import Accent from "../components/Text/Accent/index.astro";
 ---
 
 <Layout>
-    <Header />
-    <ContentWrapper>
-        <ArticleLeft>
-            <Fragment slot="heading">Leverage To The <Accent>Extreme</Accent></Fragment>
-            <Fragment slot="text">
-                <ParagraphLeft>Crypto is all about <Emphasise>freedom</Emphasise>, so why should you be restricted when <Emphasise>margin trading</Emphasise>?</ParagraphLeft>
-                <ParagraphLeft>Take advantage of <Emphasise>short-term price movements</Emphasise> with leverage up to <Emphasise>100x</Emphasise>.</ParagraphLeft>
-            </Fragment>
-            <Link slot="cta" href="https://app.torque.money/">Leverage Now</Link>
-            <Image slot="image" src="/assets/GRAPH.png" width="600" alt="Leverage graph" />
-        </ArticleLeft>
-        <ArticleRight>
-            <Fragment slot="heading">On-chain <Accent>Optimized</Accent> LP Rewards</Fragment>
-            <Fragment slot="text">
-                <ParagraphRight>
-                    Sick of <Emphasise>monitoring</Emphasise> your favourite <Emphasise>yield aggregator</Emphasise>
-                    and constantly <Emphasise>moving</Emphasise> your <Emphasise>LP</Emphasise> positions around?
-                </ParagraphRight>
-                <ParagraphRight>
-                    <Emphasise>Deposit</Emphasise> your <Emphasise>underlying tokens</Emphasise> to our <Emphasise>vault</Emphasise> and we will
-                    ensure you get the <Emphasise>highest LP rewards</Emphasise> possible without you having to do anything using a
-                    <Emphasise>trustless on-chain</Emphasise> solution!
-                </ParagraphRight>
-            </Fragment>
-            <Link slot="cta" href="https://app.torque.money/">Deposit Now</Link>
-            <Image slot="image"src="/assets/TOKEN.png" width="400" alt="TAU token" />
-        </ArticleRight>
-        <ArticleLeft>
-            <Fragment slot="heading">Trustless. <Accent>Permissionless</Accent>. Decentralized.</Fragment>
-            <Fragment slot="text">
-                <ParagraphLeft>
-                    100% of our services are managed entirely by smart contracts on the blockchain which can be audited by anyone, creating a completely
-                    <Emphasise>trustless</Emphasise> and <Emphasise>decentralized</Emphasise> platform.
-                </ParagraphLeft>
-                <ParagraphLeft>
-                    Our services are also 100% equal for every single user, allowing us to present a truly
-                    <Emphasise>permissionless</Emphasise> system.
-                </ParagraphLeft>
-            </Fragment>
-            <Link slot="cta" href="https://docs.torque.money/">Read The Docs</Link>
-            <Image slot="image" src="/assets/LOCK.svg" width="400" alt="Lock" />
-        </ArticleLeft>
-    </ContentWrapper>
-    <Footer />
+    <ArticleLeft>
+        <Fragment slot="heading">Leverage To The <Accent>Extreme</Accent></Fragment>
+        <Fragment slot="text">
+            <ParagraphLeft>Crypto is all about <Emphasise>freedom</Emphasise>, so why should you be restricted when <Emphasise>margin trading</Emphasise>?</ParagraphLeft>
+            <ParagraphLeft>Take advantage of <Emphasise>short-term price movements</Emphasise> with leverage up to <Emphasise>100x</Emphasise>.</ParagraphLeft>
+        </Fragment>
+        <Link slot="cta" href="https://app.torque.money/">Leverage Now</Link>
+        <Image slot="image" src="/assets/GRAPH.png" width="600" alt="Leverage graph" />
+    </ArticleLeft>
+    <ArticleRight>
+        <Fragment slot="heading">On-chain <Accent>Optimized</Accent> LP Rewards</Fragment>
+        <Fragment slot="text">
+            <ParagraphRight>
+                Sick of <Emphasise>monitoring</Emphasise> your favourite <Emphasise>yield aggregator</Emphasise>
+                and constantly <Emphasise>moving</Emphasise> your <Emphasise>LP</Emphasise> positions around?
+            </ParagraphRight>
+            <ParagraphRight>
+                <Emphasise>Deposit</Emphasise> your <Emphasise>underlying tokens</Emphasise> to our <Emphasise>vault</Emphasise> and we will
+                ensure you get the <Emphasise>highest LP rewards</Emphasise> possible without you having to do anything using a
+                <Emphasise>trustless on-chain</Emphasise> solution!
+            </ParagraphRight>
+        </Fragment>
+        <Link slot="cta" href="https://app.torque.money/">Deposit Now</Link>
+        <Image slot="image"src="/assets/TOKEN.png" width="400" alt="TAU token" />
+    </ArticleRight>
+    <ArticleLeft>
+        <Fragment slot="heading">Trustless. <Accent>Permissionless</Accent>. Decentralized.</Fragment>
+        <Fragment slot="text">
+            <ParagraphLeft>
+                100% of our services are managed entirely by smart contracts on the blockchain which can be audited by anyone, creating a completely
+                <Emphasise>trustless</Emphasise> and <Emphasise>decentralized</Emphasise> platform.
+            </ParagraphLeft>
+            <ParagraphLeft>
+                Our services are also 100% equal for every single user, allowing us to present a truly
+                <Emphasise>permissionless</Emphasise> system.
+            </ParagraphLeft>
+        </Fragment>
+        <Link slot="cta" href="https://docs.torque.money/">Read The Docs</Link>
+        <Image slot="image" src="/assets/LOCK.svg" width="400" alt="Lock" />
+    </ArticleLeft>
 </Layout>
