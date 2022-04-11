@@ -7,6 +7,8 @@ const config = {
     siteURL: "https://torque.money",
     bannerURL: "https://i.imgur.com/IzQ9Jvl.png",
     twitterHandle: "@torque_money",
+    connectURL: "https://linktr.ee/torque_money",
+    appURL: "https://app.torque.money",
 };
 
 // https://astro.build/config

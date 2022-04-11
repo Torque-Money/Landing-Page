@@ -1,13 +1,15 @@
 ---
 import FooterLink from "../Link/FooterLink/index.astro";
 
-const CONNECT_URL = "https://linktr.ee/torque_money";
-const APP_URL = "https://app.torque.money/";
+import config from "../../../astro.config.mjs";
+
+// @ts-ignore
+const {misc} = config;
 ---
 
 <footer class="w-4/5 mx-auto">
     <ul class="flex items-center justify-start space-x-10 pb-6 pt-10">
-        <li><FooterLink href={CONNECT_URL} name="Links">Links</FooterLink></li>
-        <li><FooterLink href={APP_URL} name="App">App</FooterLink></li>
+        <li><FooterLink href={misc.connectURL} name="Links">Links</FooterLink></li>
+        <li><FooterLink href={misc.appURL} name="App">App</FooterLink></li>
     </ul>
 </footer>
