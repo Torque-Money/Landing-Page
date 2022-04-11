@@ -6,5 +6,5 @@ const pagePath = Astro.request.url;
 ---
 
 <a href={href} onclick={
-    () => logEvent("link_click", category, pagePath + "_to_" + href + "_named_" + name)
+    () => logEvent("link_click", category, pagePath + "_to_" + href + "_named_'" + name + "'")
 }><slot /></a>
