@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import Article from "../components/Article/index.astro";
 
 import Image from "../components/Image/index.astro";
-import Button from "../components/Link/Button/index.astro";
+import ButtonLink from "../components/Link/ButtonLink/index.astro";
 import Paragraph from "../components/Text/Paragraph/index.astro";
 import Emphasise from "../components/Text/Emphasise/index.astro";
 import Accent from "../components/Text/Accent/index.astro";
@@ -17,7 +17,7 @@ import Accent from "../components/Text/Accent/index.astro";
             <Paragraph side="left">Crypto is all about <Emphasise>freedom</Emphasise>, so why should you be restricted when <Emphasise>margin trading</Emphasise>?</Paragraph>
             <Paragraph side="left">Take advantage of <Emphasise>short-term price movements</Emphasise> with leverage up to <Emphasise>100x</Emphasise>.</Paragraph>
         </Fragment>
-        <Button slot="cta" href="https://app.torque.money/" name="Leverage Now">Leverage Now</Button>
+        <ButtonLink slot="cta" href="https://app.torque.money/" name="Leverage Now">Leverage Now</ButtonLink>
         <Image slot="image" src="/assets/GRAPH.png" width="600" alt="Leverage graph" />
     </Article>
     <Article side="right">
@@ -33,7 +33,7 @@ import Accent from "../components/Text/Accent/index.astro";
                 <Emphasise>trustless on-chain</Emphasise> solution!
             </Paragraph>
         </Fragment>
-        <Button slot="cta" href="https://app.torque.money/" name="Deposit Now">Deposit Now</Button>
+        <ButtonLink slot="cta" href="https://app.torque.money/" name="Deposit Now">Deposit Now</ButtonLink>
         <Image slot="image"src="/assets/TOKEN.png" width="400" alt="TAU token" />
     </Article>
     <Article side="left">
@@ -48,7 +48,7 @@ import Accent from "../components/Text/Accent/index.astro";
                 <Emphasise>permissionless</Emphasise> system.
             </Paragraph>
         </Fragment>
-        <Button slot="cta" href="https://docs.torque.money/" name="Read The Docs">Read The Docs</Button>
+        <ButtonLink slot="cta" href="https://docs.torque.money/" name="Read The Docs">Read The Docs</ButtonLink>
         <Image slot="image" src="/assets/LOCK.svg" width="400" alt="Lock" />
     </Article>
 </Layout>
