@@ -1,5 +1,5 @@
 ---
-import Link from "../../Link/index.astro";
+import Button from "../../Link/Button/index.astro";
 import NavLink from "../../Link/NavLink/index.astro";
 
 import Image from "../../Image/index.astro";
@@ -8,7 +8,7 @@ import Image from "../../Image/index.astro";
 <nav class="flex items-center justify-between py-4">
     <Image src="/assets/LOGO.png" width="175" alt="Torque logo" />
     <ul class="flex items-center justify-evenly space-x-10">
-        <li><NavLink href="https://linktr.ee/torque_money">Links</NavLink></li>
-        <li><Link href="https://app.torque.money/">App</Link></li>
+        <li><NavLink href="https://linktr.ee/torque_money" name="Links">Links</NavLink></li>
+        <li><Button href="https://app.torque.money/" name="App">App</Button></li>
     </ul>
 </nav>

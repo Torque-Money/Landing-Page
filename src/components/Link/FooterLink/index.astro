@@ -4,6 +4,6 @@ import LinkWrapper from "../LinkWrapper/index.astro";
 const {href, name} = Astro.props;
 ---
 
-<LinkWrapper href={href} name={name}>
+<LinkWrapper href={href} name={name} category="Footer">
     <span class="text-neutral-400 text-lg font-medium"><slot /></span>
 </LinkWrapper>
