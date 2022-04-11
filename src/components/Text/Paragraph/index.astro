@@ -1,0 +1,9 @@
+---
+const {side} = Astro.props;
+---
+
+{side === "left" ?
+    <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12 mr-auto"><slot /></p>
+    :
+    <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12 ml-auto"><slot /></p>
+}
