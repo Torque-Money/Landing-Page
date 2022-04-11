@@ -1,158 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MKW6VC08TF"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag("js", new Date());
+  <head>
+    <!-- Google analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MKW6VC08TF"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-            gtag("config", "G-MKW6VC08TF");
-        </script>
+      gtag("config", "G-MKW6VC08TF");
+    </script>
 
-        <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
-        <link rel="manifest" href="public/manifest.json" />
+    <!-- Links to extras -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 
-        <title>Torque - Extreme DeFi Leveraging</title>
-        <meta
-            name="description"
-            content="The official website of the Torque DeFi leveraging protocol. Borrow extreme amounts of crypto against your collateral, or provide liquidity for high APY's and yield farming bonuses."
-        />
-        <meta name="theme-color" content="#921ebb" />
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://torque.money" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
 
-        <meta name="og:title" content="Torque - Extreme DeFi Leveraging" />
-        <meta
-            name="og:description"
-            content="The official website of the Torque DeFi leveraging protocol. Borrow extreme amounts of crypto against your collateral, or provide liquidity for high APY's and yield farming bonuses."
-        />
-        <meta name="og:image" content="https://i.imgur.com/IzQ9Jvl.png" />
-        <meta property="og:url" content="https://torque.money" />
+    <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
+    <link rel="manifest" href="public/manifest.json" />
 
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Torque - Extreme DeFi Leveraging" />
-        <meta
-            name="twitter:description"
-            content="The official website of the Torque DeFi leveraging protocol. Borrow extreme amounts of crypto against your collateral, or provide liquidity for high APY's and yield farming bonuses."
-        />
-        <meta name="twitter:site" content="@torque_money" />
-        <meta name="twitter:image" content="https://i.imgur.com/IzQ9Jvl.png" />
-        <meta property="twitter:url" content="https://torque.money" />
+    <!-- Page metadata -->
+    <title>Torque - Extreme DeFi Leveraging</title>
+    <meta
+      name="description"
+      content="The official website of the Torque DeFi leveraging protocol. Borrow extreme amounts of crypto against your collateral, or provide liquidity for high APY's and yield farming bonuses."
+    />
+    <meta name="theme-color" content="#921ebb" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://torque.money" />
 
-        <link href="css/body.css" rel="stylesheet" />
-        <link href="dist/output.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Header -->
-        <header class="w-4/5 mx-auto">
-            <nav class="flex items-center justify-between py-4">
-                <a><img src="images/LOGO.png" width="175" alt="Torque" /></a>
-                <ul class="text-white text-2xl font-medium flex items-center justify-evenly space-x-10">
-                    <li>
-                        <a href="https://linktr.ee/torque_money">Links</a>
-                    </li>
-                    <li>
-                        <a class="bg-fuchsia-700 hover:bg-fuchsia-600 px-6 py-3 rounded-xl font-bold glow" href="https://app.torque.money/">App</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="xl:mt-32 mt-8 flex xl:flex-row flex-col xl:items-start items-center justify-evenly xl:space-y-0 space-y-16 xl:space-x-32 w-11/12 mx-auto">
-                <div class="flex flex-col items-start space-y-8" style="min-width: 300px">
-                    <div class="text-5xl font-bold text-white pt-32">
-                        <h1>Extreme <span class="text-fuchsia-600">DeFi</span></h1>
-                        <h1 class="text-6xl">Leveraging</h1>
-                    </div>
-                    <h2 class="text-xl text-neutral-400 font-medium w-11/12">
-                        Torque provides clients with huge amounts of <span class="text-neutral-300">leverage</span> and
-                        <span class="text-neutral-300">liquidity providing</span> rewards for the most popular cryptocurrencies whilst being
-                        <span class="text-neutral-300">100% decentralized and permissionless.</span>
-                    </h2>
-                    <a class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://app.torque.money/"
-                        >Get Started</a
-                    >
-                </div>
-                <img class="glow rounded-xl" src="images/APP.png" width="800" />
-            </div>
-        </header>
-        <!-- Body -->
-        <div class="bg-neutral-800 bg-opacity-30 border-t-8 border-opacity-60 border-fuchsia-700 mt-24 py-32">
-            <!-- Articles -->
-            <main class="w-4/5 mx-auto flex flex-col items-center space-y-48">
-                <!-- Leverage -->
-                <article class="w-4/5 mx-auto flex xl:flex-row flex-col xl:items-start items-center justify-evenly xl:space-x-32 xl:space-y-0 space-y-24">
-                    <div class="flex flex-col items-start space-y-12 xl:pt-24" style="min-width: 400px">
-                        <div class="pb-6 border-b-2 border-b-neutral-400 border-opacity-5">
-                            <h3 class="text-white font-bold text-3xl">Leverage To The <span class="text-fuchsia-500">Extreme</span></h3>
-                            <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12">
-                                Crypto is all about freedom, so why should you be restricted when margin trading?
-                            </p>
-                            <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12">
-                                While we advise against taking such risky positions, our protocol will let you
-                                <span class="text-neutral-300">leverage up to a maximum of roughly 82x</span>.
-                            </p>
-                        </div>
-                        <a class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://app.torque.money/"
-                            >Leverage Now</a
-                        >
-                    </div>
-                    <img class="glow rounded-xl" src="images/GRAPH.png" width="600" />
-                </article>
-                <!-- Provide -->
-                <article class="w-4/5 mx-auto flex xl:flex-row flex-col xl:items-start items-center justify-evenly xl:space-x-32 xl:space-y-0 space-y-24">
-                    <img src="images/TOKEN.png" width="400" style="filter: drop-shadow(-4px 8px 12px #842191)" />
-                    <div class="flex flex-col items-end space-y-12 xl:pt-24" style="min-width: 400px">
-                        <div class="text-right pb-6 border-b-2 border-b-neutral-400 border-opacity-5">
-                            <h3 class="text-white font-bold text-3xl">High <span class="text-fuchsia-500">APY</span> and Yields</h3>
-                            <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12 ml-auto">
-                                Looking for <span class="text-neutral-300">high returns</span> without taking on the risks of leveraged trading?
-                            </p>
-                            <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12 ml-auto">
-                                <span class="text-neutral-300">Provide liquidity</span> to our leveraging pool and you'll be rewarded with a
-                                <span class="text-neutral-300">competitive APY</span>, while enjoying bonus yield farming rewards.
-                            </p>
-                        </div>
-                        <a class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://app.torque.money/"
-                            >Add Liquidity</a
-                        >
-                    </div>
-                </article>
-                <!-- Trustless -->
-                <article class="w-4/5 mx-auto flex xl:flex-row flex-col xl:items-start items-center justify-evenly xl:space-x-32 xl:space-y-0 space-y-24">
-                    <div class="flex flex-col items-start space-y-12 xl:pt-24" style="min-width: 400px">
-                        <div class="pb-6 border-b-2 border-b-neutral-400 border-opacity-5">
-                            <h3 class="text-white font-bold text-3xl">Trustless. <span class="text-fuchsia-500">Permissionless</span>. Decentralized.</h3>
-                            <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12">
-                                100% of our services are managed entirely by smart contracts on the blockchain which can be audited by anyone, creating a completely
-                                <span class="text-neutral-300">trustless</span> and <span class="text-neutral-300">decentralized</span> platform.
-                            </p>
-                            <p class="text-xl text-neutral-400 font-medium mt-5 w-11/12">
-                                Our services are also 100% equal for every single user, allowing us to present a truly
-                                <span class="text-neutral-300">permissionless</span> system.
-                            </p>
-                        </div>
-                        <a class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow" href="https://docs.torque.money/"
-                            >Read The Docs</a
-                        >
-                    </div>
-                    <img src="images/LOCK.svg" width="400" style="filter: drop-shadow(4px 8px 12px rgba(132, 33, 145, 0.5))" />
-                </article>
-            </main>
+    <!-- Open graph tags -->
+    <meta name="og:title" content="Torque - Extreme DeFi Leveraging" />
+    <meta
+      name="og:description"
+      content="The official website of the Torque DeFi leveraging protocol. Borrow extreme amounts of crypto against your collateral, or provide liquidity for high APY's and yield farming bonuses."
+    />
+    <meta name="og:image" content="https://i.imgur.com/0KMTwRO.png" />
+    <meta property="og:url" content="https://torque.money" />
+
+    <!-- Twitter tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Torque - Extreme DeFi Leveraging" />
+    <meta
+      name="twitter:description"
+      content="The official website of the Torque DeFi leveraging protocol. Borrow extreme amounts of crypto against your collateral, or provide liquidity for high APY's and yield farming bonuses."
+    />
+    <meta name="twitter:site" content="@torque_money" />
+    <meta name="twitter:image" content="https://i.imgur.com/0KMTwRO.png" />
+    <meta property="twitter:url" content="https://torque.money" />
+  </head>
+  <body>
+    <!-- Entire header section -->
+    <header>
+      <!-- Main horizontal nav -->
+      <nav>
+        <a href="#"
+          ><img class="logo" src="images/logo1.png" alt="Torque Logo"
+        /></a>
+        <!-- Hamburger icon -->
+        <div class="hamburger">
+          <i></i>
+          <i></i>
+          <i></i>
         </div>
-        <!-- Footer -->
-        <footer class="w-4/5 mx-auto">
-            <ul class="text-neutral-400 text-lg font-medium flex items-center justify-start space-x-10 pb-6 pt-10">
-                <li>
-                    <a href="https://linktr.ee/torque_money">Links</a>
-                </li>
-                <li>
-                    <a href="https://app.torque.money/">App</a>
-                </li>
-            </ul>
-        </footer>
-    </body>
+        <ul>
+          <li><a class="link ignore" href="#about">About</a></li>
+          <li>
+            <a class="link ignore" href="https://docs.torque.money/">Docs</a>
+          </li>
+          <li class="ignore">
+            <a href="https://app.torque.money/" class="button">App</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Dropdown nav bar -->
+      <div class="nav">
+        <ul>
+          <li><a class="link" href="#about">About</a></li>
+          <li>
+            <a class="link" href="https://docs.torque.money/">Docs</a>
+          </li>
+          <li class="ignore">
+            <a href="https://app.torque.money/" class="button">App</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Title and image -->
+      <div class="header">
+        <div class="title">
+          <h1>
+            Extreme Defi
+            <span style="font-size: 125%; color: #921ebb">Leveraging</span>
+          </h1>
+          <ul>
+            <li>
+              <a
+                class="button-tall"
+                href="https://app.torque.money/#/leverage/long"
+                >Leverage</a
+              >
+            </li>
+            <li>
+              <a
+                class="link"
+                href="https://app.torque.money/#/provide-liquidity"
+                >Provide Liquidity</a
+              >
+            </li>
+          </ul>
+        </div>
+        <img class="logo" src="images/logo2.png" alt="Torque Logo" />
+      </div>
+      <!-- Waves -->
+      <div class="wave">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </header>
+    <!-- Main content -->
+    <main id="about">
+      <!-- First section (aligned left) -->
+      <article class="no-limits">
+        <section>
+          <div class="bar"></div>
+          <h2>Leverage To The Extreme</h2>
+          <p>
+            Crypto is all about freedom, so why should you be restricted when
+            margin trading?
+          </p>
+          <p>
+            While we advise against taking such risky positions, our protocol
+            will let you leverage up to a maximum of 125x.
+          </p>
+          <a
+            class="button-tall-dark"
+            href="https://app.torque.money/#/leverage/long"
+            >Leverage</a
+          >
+        </section>
+        <img src="images/Graph.png" alt="Borrowing graph" />
+      </article>
+      <!-- Second section (aligned right) -->
+      <article class="returns">
+        <img src="images/TOKEN.png" alt="Token" />
+        <section>
+          <div class="bar"></div>
+          <h2>High APY And Yields</h2>
+          <p>
+            Looking for high returns without taking on the risks of leveraged
+            trading?
+          </p>
+          <p>
+            Provide liquidity to our lending pool and you'll be rewarded with a
+            competitive APY, while enjoying bonus yield farming rewards.
+          </p>
+          <a
+            class="button-tall-dark"
+            href="https://app.torque.money/#/provide-liquidity"
+            >Provide Liquidity</a
+          >
+        </section>
+      </article>
+    </main>
+    <!-- Footer section -->
+    <footer>
+      <div class="cta">
+        <h2>Ready To Get Started?</h2>
+        <ul>
+          <li>
+            <a
+              class="button-tall"
+              href="https://app.torque.money/#/leverage/long"
+              >Leverage</a
+            >
+          </li>
+          <li>
+            <a class="link" href="https://app.torque.money/#/provide-liquidity"
+              >Provide Liquidity</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- Footer links -->
+      <div class="footer">
+        <ul>
+          <li>
+            <a class="link" href="https://twitter.com/torque_money">Twitter</a>
+          </li>
+          <li><a class="link" href="https://docs.torque.money/">Docs</a></li>
+          <li>
+            <a class="link" href="https://github.com/Torque-Money">GitHub</a>
+          </li>
+          <li>
+            <a class="link" href="https://discord.gg/Wk33hnKtvx">Discord</a>
+          </li>
+          <li><a class="link" href="https://app.torque.money/">App</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
 </html>
