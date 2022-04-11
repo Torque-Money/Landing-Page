@@ -9,8 +9,7 @@ import Accent from "../Text/Accent/index.astro";
 
 import config from "../../../astro.config.mjs";
 
-// @ts-ignore
-const {misc} = config;
+const {misc} = config as any;
 ---
 
 <HeaderWrapper>

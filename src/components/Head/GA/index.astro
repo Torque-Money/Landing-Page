@@ -1,11 +1,11 @@
 ---
 import config from "../../../../astro.config.mjs";
 
-// @ts-ignore
-const {misc} = config;
+const {misc} = config as any;
+const gaURL = "https://www.googletagmanager.com/gtag/js?id=" + misc.gaId;
 ---
 
-<script async src={`https://www.googletagmanager.com/gtag/js?id=${misc.gaId}`}></script>
+<script async src={gaURL}></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {

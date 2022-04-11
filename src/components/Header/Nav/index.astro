@@ -6,8 +6,7 @@ import Image from "../../Image/index.astro";
 
 import config from "../../../../astro.config.mjs";
 
-// @ts-ignore
-const {misc} = config;
+const {misc} = config as any;
 ---
 
 <nav class="flex items-center justify-between py-4">
