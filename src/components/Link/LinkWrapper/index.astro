@@ -2,9 +2,9 @@
 import {logEvent} from "../../../scripts/analytics.ts";
 
 const {href, name, category} = Astro.props;
-const pagePath = Astro.request.url;
+const canonical = Astro.canonicalURL;
 ---
 
 <a href={href} onclick={
-    () => logEvent("link_click", category, pagePath + "_to_" + href + "_named_'" + name + "'")
+    () => logEvent("link_click", category, canonical + "_to_" + href + "_named_'" + name + "'")
 }><slot /></a>
