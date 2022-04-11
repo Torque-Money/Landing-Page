@@ -3,32 +3,30 @@ import GA from "./GA/index.astro";
 import OG from "./OG/index.astro";
 import Twitter from "./Twitter/index.astro";
 
-const TITLE = "Torque Money - DeFi The Norm"
-const DESCRIPTION = "Home of high leverage and the highest sustainable yield farming rewards, powered 100% by DeFi."
-const THEME_COLOR = "#921ebb";
+import config from "../../../astro.config.mjs";
 
-const SITE_URL = "https://torque.money";
-const BANNER_URL = "https://i.imgur.com/IzQ9Jvl.png";
+// @ts-ignore
+const {misc} = config;
+const canonicalURL = Astro.canonicalURL;
 
-const TWITTER_HANDLE = "@torque_money"
 ---
 
 <head>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="manifest" href="/manifest.json" />
-    <link rel="canonical" href={SITE_URL} />
+    <link rel="canonical" href={canonicalURL} />
     
-    <title>{TITLE}</title>
+    <title>{misc.title}</title>
     <meta
         name="description"
-        content={DESCRIPTION}
+        content={misc.description}
     />
     
-    <meta name="theme-color" content={THEME_COLOR} />
+    <meta name="theme-color" content={misc.themeColor} />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <GA /> 
-    <OG title={TITLE} description={DESCRIPTION} siteURL={SITE_URL} bannerURL={BANNER_URL} />
-    <Twitter title={TITLE} description={DESCRIPTION} siteURL={SITE_URL} bannerURL={BANNER_URL} twitterHandle={TWITTER_HANDLE} />
+    <OG title={misc.title} description={misc.description} siteURL={misc.siteURL} bannerURL={misc.bannerURL} />
+    <Twitter title={misc.title} description={misc.description} siteURL={misc.siteURL} bannerURL={misc.bannerURL} twitterHandle={misc.twitterHandle} />
 </head>
