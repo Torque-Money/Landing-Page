@@ -1,0 +1,9 @@
+---
+import LinkWrapper from "../LinkWrapper/index.astro";
+
+const {href, name} = Astro.props;
+---
+
+<LinkWrapper href={href} name={name}>
+    <span class="text-2xl px-6 py-3 rounded-xl bg-fuchsia-700 hover:bg-fuchsia-600 text-white font-bold glow-box"><slot /></span>
+</LinkWrapper>

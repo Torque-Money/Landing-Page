@@ -1,0 +1,10 @@
+---
+import {logEvent} from "../../../scripts/analytics.ts";
+
+const {href, name} = Astro.props;
+const pagePath = Astro.request.url;
+---
+
+<a href={href} onclick={
+    () => logEvent("link_click", undefined, pagePath + "_to_" + href + "_named_" + name)
+}><slot /></a>
