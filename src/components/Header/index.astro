@@ -6,6 +6,11 @@ import ButtonLink from "../Link/ButtonLink/index.astro";
 import Paragraph from "../Text/Paragraph/index.astro";
 import Emphasise from "../Text/Emphasise/index.astro";
 import Accent from "../Text/Accent/index.astro";
+
+import config from "../../../astro.config.mjs";
+
+// @ts-ignore
+const {misc} = config;
 ---
 
 <HeaderWrapper>
@@ -20,7 +25,7 @@ import Accent from "../Text/Accent/index.astro";
                 <Emphasise>onchain-optimized LP</Emphasise> rewards possible in
                 <Emphasise>DeFi</Emphasise>. 100% decentralized and permissionless.
             </Paragraph>
-            <ButtonLink href="https://app.torque.money/" name="Get Started">
+            <ButtonLink href={misc.appURL} name="Get Started">
                 Get Started
             </ButtonLink>
         </div>

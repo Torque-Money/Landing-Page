@@ -9,6 +9,7 @@ const config = {
     twitterHandle: "@torque_money",
     connectURL: "https://linktr.ee/torque_money",
     appURL: "https://app.torque.money",
+    gaId: "G-MKW6VC08TF",
 };
 
 // https://astro.build/config

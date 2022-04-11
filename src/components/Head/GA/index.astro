@@ -1,4 +1,11 @@
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MKW6VC08TF"></script>
+---
+import config from "../../../../astro.config.mjs";
+
+// @ts-ignore
+const {misc} = config;
+---
+
+<script async src={`https://www.googletagmanager.com/gtag/js?id=${misc.gaId}`}></script>
 <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -6,5 +13,5 @@
     }
     gtag("js", new Date());
 
-    gtag("config", "G-MKW6VC08TF");
+    gtag("config", misc.gaId);
 </script>
